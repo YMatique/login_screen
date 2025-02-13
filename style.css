@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background-color: #2d4278;
+    color: #001737;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    height: auto !important;
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.form {
+    width: 100%;
+}
+
+.logo-line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    background-color: #3b579b
+        /*#f21256*/
+    ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.logo h4 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.header {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.header h6 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+input {
+    background: transparent;
+    border: 1px solid #e8eff9;
+    padding: 15px 36px;
+    color: #495057;
+    border-radius: 0;
+    outline: none;
+    width: 100%;
+    transition: border-color .15s ease-in-out;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #2d4278
+        /*#d20c4f*/
+    ;
+}
+
+
+button {
+    text-transform: uppercase;
+    height: 50px;
+    width: 100%;
+    font-weight: 500;
+    background-color: #3b579b
+        /*#f21256*/
+    ;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: background .15s ease-in-out;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #2d4278
+        /*#d20c4f*/
+    ;
+    cursor: pointer;
+}
+
+.form-footer {
+    font-weight: 300;
+    text-align: center;
+}
+
+.form-footer a {
+    color: #2d4278
+        /*#d20c4f*/
+    ;
+    font-weight: 400;
+    transition: color .15s ease-in-out;
+}
+
+.form-footer a:hover {
+    color: #3b579b
+        /*#f21256*/
+    ;
+}
+
+/* Switching theme */
+body.theme2 {
+    background-color: #e8eff9;
+}
+
+.logo.theme2 {
+    background-color: #f21256;
+}
+
+input.theme2:focus {
+    border-color: #d20c4f;
+}
+
+button.theme2 {
+    background-color: #f21256;
+}
+
+button.theme2:hover {
+    background-color: #d20c4f;
+}
+
+.form-footer.theme2 a {
+    color: #d20c4f;
+}
+
+.form-footer.theme2 a:hover {
+    color: #f21256;
+}

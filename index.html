@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="card">
+                <form action="" class="form">
+                    <div class="logo-line theme1">
+                        <div class="logo">
+                            <h4>Logo</h4>
+                        </div>
+                    </div>
+                    <div class="header">
+                        <h6>Olá! Vamos Começar</h6>
+                        <p>Faça login para continuar</p>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Username" class="theme1">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" name="" id="" placeholder="Password" class="theme1">
+                    </div>
+
+                    <button type="submit" class="theme1">Login</button>
+                    <div class="form-footer theme1">
+                        <p>Não tem conta? <a href="">Criar</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.querySelectorAll('.theme1').forEach((e) => { e.classList.toggle('theme2'); });
+            document.querySelector('.logo').classList.toggle('theme2');;
+            document.querySelector('body').classList.toggle('theme2');
+        }
+        document.addEventListener("keydown", (e) => {
+            if (e.ctrlKey && e.key.toLocaleLowerCase() == 'c') {
+                e.preventDefault();
+                toggleTheme();
+            }
+        });
+    </script>
+</body>
+
+</html>
